@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  model: MyString
+  GBs: MyString
+  Memory: MyString
+  condition: MyText
+  price: 1
+  availability: false
+
+two:
+  model: MyString
+  GBs: MyString
+  Memory: MyString
+  condition: MyText
+  price: 1
+  availability: false

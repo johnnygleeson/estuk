@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @iphone.model %>
+</p>
+
+<p>
+  <strong>Gbs:</strong>
+  <%= @iphone.GBs %>
+</p>
+
+<p>
+  <strong>Memory:</strong>
+  <%= @iphone.Memory %>
+</p>
+
+<p>
+  <strong>Condition:</strong>
+  <%= @iphone.condition %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @iphone.price %>
+</p>
+
+<p>
+  <strong>Availability:</strong>
+  <%= @iphone.availability %>
+</p>
+
+<%= link_to 'Edit', edit_iphone_path(@iphone) %> |
+<%= link_to 'Back', iphones_path %>
