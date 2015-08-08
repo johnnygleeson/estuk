@@ -1,30 +1,38 @@
 class IphonesController < ApplicationController
   before_action :set_iphone, only: [:show, :edit, :update, :destroy]
 
+  respond_to :html
+
   # GET /iphones
   # GET /iphones.json
   def index
     @iphones = Iphone.all
+    respond_with(@iphones)
   end
 
   # GET /iphones/1
   # GET /iphones/1.json
   def show
+    respond_with(@iphones)
   end
 
   # GET /iphones/new
   def new
     @iphone = Iphone.new
+    respond_with(@iphones)
   end
 
   # GET /iphones/1/edit
   def edit
+   respond_with(@iphones)
   end
 
   # POST /iphones
   # POST /iphones.json
   def create
     @iphone = Iphone.new(iphone_params)
+    @iphone.save
+    respond_with(@iphones)
 
     respond_to do |format|
       if @iphone.save
@@ -69,6 +77,6 @@ class IphonesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def iphone_params
-      params.require(:iphone).permit(:model, :GBs, :Memory, :condition, :price, :availability)
+      params.require(:iphone).permit(:Model, :Memory, :Condition, :Price, :Availability)
     end
 end

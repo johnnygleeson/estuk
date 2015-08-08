@@ -18,12 +18,11 @@
   <tbody>
     <% @iphones.each do |iphone| %>
       <tr>
-        <td><%= iphone.model %></td>
-        <td><%= iphone.GBs %></td>
+        <td><%= iphone.Model %></td>
         <td><%= iphone.Memory %></td>
-        <td><%= iphone.condition %></td>
-        <td><%= iphone.price %></td>
-        <td><%= iphone.availability %></td>
+        <td><%= iphone.Condition %></td>
+        <td><%= iphone.Price %></td>
+        <td><%= iphone.Availability %></td>
         <td><%= link_to 'Show', iphone %></td>
         <td><%= link_to 'Edit', edit_iphone_path(iphone) %></td>
         <td><%= link_to 'Destroy', iphone, method: :delete, data: { confirm: 'Are you sure?' } %></td>

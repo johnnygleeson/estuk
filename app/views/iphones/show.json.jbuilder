@@ -1,1 +1,1 @@
-json.extract! @iphone, :id, :model, :GBs, :Memory, :condition, :price, :availability, :created_at, :updated_at
+json.extract! @iphone, :id, :Model, :Memory, :Condition, :Price, :Availability, :created_at, :updated_at
